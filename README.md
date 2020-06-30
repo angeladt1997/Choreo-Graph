@@ -1,2 +1,5 @@
 # Choreo-Graph-
 The beginning foundations of the software designed for choreographers by a choreographer
+Choreo-Graph is a work in process! It's design is the answer to a question that Angela has been asking for years- How can I express my love for movement and its creation when I do not have dancers or a studio? Or, how can dancers and other on stage performers understand an artist's concept when they have never seen it? The goal of Choreo-Graph is to allow choreographers to have movements, phrases, and stage settings all in one place to design full pieces without dancers present. Angela has multiple journals of written choreography that she would like to bring to life. As the kinks are being worked out, Angela is busy learning the necessary tools to make this user-friendly software available to the public!
+
+In order to get it done, Angela needs a little more (a lot more) work with javascript, and how to make applications compatible on all electronic devices. As of now, all Angela has is the logo and the idea to make it work. She is currently in a programming class to help make this a reality, but little by little of course!
