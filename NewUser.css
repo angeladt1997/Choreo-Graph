@@ -1,0 +1,15 @@
+h1 {
+    text-align: center;
+}
+
+.registrationForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signInType {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

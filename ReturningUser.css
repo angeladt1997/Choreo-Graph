@@ -1,0 +1,15 @@
+.createNewUser{
+    text-align: right;
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
