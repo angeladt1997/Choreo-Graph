@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NewUser</title>
-    <link rel="stylesheet" href="css/NewUser.css?v=1.0">
+    <link rel="stylesheet" href="NewUser.css?v=1.0">
 </head>
 <body>
     <h1>New User</h1>
-    <div>
-        <form class="RegistrationForm">
+    <div class="RegistrationForm">
+        <form class="RegistrationFormContent">
             <textarea class="newUsername" placeholder="username">Choose a Username</textarea> 
             <textarea class="newPassword" placeholder="password">Choose a Password</textarea>
             <textarea class="emailAddress" placeholder="email Address">Enter Your Email</textarea>
+        </form>
+    <div class="selectors">
             <select name="state" class="stateSelector"> State</select>
                 <option value="Texas">Texas</option>
             <select name="organizationAffiliation" class="organizationSelector"> Organization</select>
                 <option value="studio6">STUDIO6</option>
-        </form>
+    </div>
+        
     <div>
         <section class="signInType">
             <button class="regularSignIn" type="submit">

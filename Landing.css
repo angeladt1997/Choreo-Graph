@@ -2,12 +2,14 @@
     text-align: center;
 }
 
-.button {
+.loginOptions {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 150px;
     align-self: center;
+    margin: auto;
+    padding: 10px;
 
 }
