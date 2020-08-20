@@ -5,11 +5,8 @@
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
     width: 150px;
-    align-self: center;
-    margin: auto;
 }
 
 .loginOptions {
