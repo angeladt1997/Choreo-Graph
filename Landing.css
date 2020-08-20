@@ -2,7 +2,11 @@
     text-align: center;
 }
 
-
+nav {
+    display: flex;
+    flex-direction: row;
+    
+}
 
 .loginOptions {
     display: flex;
