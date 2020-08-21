@@ -9,6 +9,9 @@
     flex-direction: column;
     justify-content: center;
     padding: 50px;
-    margin: auto;
+    margin-left: 60%;
+    margin-right: 60%;
+    margin-top: 50%;
+    margin-bottom: 50%;
 }
 
