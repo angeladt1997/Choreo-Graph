@@ -1,5 +1,6 @@
 .accordion {
     background-color: #000;
+    padding-top: 8px;
 }
 
 .header {
@@ -17,6 +18,8 @@
 }
 
 .defaultVideo {
+    display: flex;
+    justify-content: center;
     margin: auto;
     padding: 40px;
 }
