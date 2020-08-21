@@ -1,15 +1,14 @@
 .createNewUser{
-    text-align: right;
-}
-
-.button{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: end;
+    text-align: center;
 }
 
-.loginForm {
+.loginForm{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 20px;
+    margin: auto;
 }
+
