@@ -12,7 +12,7 @@
     padding: 40px;
 }
 
-.viewToggle {
+.viewToggle .selectorsAndToggles {
     display: flex;
     flex-direction: row;
     justify-content: center;
