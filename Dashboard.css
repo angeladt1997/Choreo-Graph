@@ -3,6 +3,10 @@
     padding-top: 8px;
 }
 
+.panelOne, .panelTwo, .panelThree {
+    padding: 5px;
+}
+
 .header {
     display: flex;
     text-align: center;
