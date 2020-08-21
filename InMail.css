@@ -16,4 +16,12 @@
     justify-content: center;
     margin: auto;
     padding: 40px;
+    width: 500;
+}
+
+.subjectLine {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
