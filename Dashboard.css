@@ -5,6 +5,9 @@
 
 .panelOne, .panelTwo, .panelThree {
     padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .header {
