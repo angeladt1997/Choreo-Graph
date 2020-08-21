@@ -1,4 +1,41 @@
 .accordion {
     background-color: #000;
-    
+}
+
+.header {
+    display: flex;
+    text-align: center;
+    padding: 20px; 
+    justify-content: center;
+}
+
+.logOut {
+    display: flex;
+    text-align: center;
+    justify-content: right;
+    font-size: 20px;
+}
+
+.defaultVideo {
+    margin: auto;
+    padding: 40px;
+}
+
+.goToStudio {
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+}
+
+.sideMenu {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+@media screen and (max-height: 450px) {
+    .sideMenu {padding-top: 15px;}
+    .sideMenu {font-size: 18px}
 }
