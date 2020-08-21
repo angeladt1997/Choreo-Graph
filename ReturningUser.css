@@ -15,3 +15,8 @@
     margin-bottom: 30%;
 }
 
+.buttonPositioning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
