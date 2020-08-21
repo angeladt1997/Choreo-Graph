@@ -12,7 +12,14 @@
     padding: 40px;
 }
 
-.viewToggle .selectorsAndToggles {
+.viewToggle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.selectorsAndToggles {
     display: flex;
     flex-direction: row;
     justify-content: center;
