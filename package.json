@@ -24,7 +24,6 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/angeladt1997/Choreo-Graph.git"
@@ -35,6 +34,13 @@
   "bugs": {
     "url": "https://github.com/angeladt1997/Choreo-Graph/issues"
   },
+  "development": [
+    "last 1 chrome version",
+    "last 1 firefox version",
+    "last 1 safari version"
+  ],
+  "devDependencies": {
+    "react-test-renderer": "^16.13.1"
+  },
   "homepage": "https://github.com/angeladt1997/Choreo-Graph/index.html"
-
 }
