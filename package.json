@@ -23,8 +23,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
-}
+  ],
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/angeladt1997/Choreo-Graph.git"
@@ -35,5 +35,6 @@
   "bugs": {
     "url": "https://github.com/angeladt1997/Choreo-Graph/issues"
   },
-  "homepage": "https://github.com/angeladt1997/Choreo-Graph#readme"
+  "homepage": "https://github.com/angeladt1997/Choreo-Graph/index.html"
+
 }
