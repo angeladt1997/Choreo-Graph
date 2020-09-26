@@ -30,12 +30,11 @@ const AuthApiService = {
           : res.json()
       )
       .then(res => {
-      
         TokenService.saveAuthToken(res.authToken)
-          AuthApiService.postRefreshToken()
-        })
-        return res
-      }),
+        AuthApiService.postRefreshToken()
+        // return res
+      })
+  },
   
 
   postRefreshToken() {
@@ -59,7 +58,7 @@ const AuthApiService = {
         return res
       })
       .catch(err => {
-       
+      
         console.error(err)
       })
   },

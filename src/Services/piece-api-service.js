@@ -4,7 +4,6 @@ import config from '../config'
 
 const PieceApiService = {
   getPieces(){
-   
     return fetch(`${config.API_ENDPOINT}/Stage`, {
       headers: {
         'content-type': 'application/json',
@@ -71,13 +70,13 @@ const PieceApiService = {
   //       'content-type': 'application/json',
   //       'authorization': `bearer ${TokenService.getAuthToken()}`,
   //     },
-    }//)
-    .then(res => 
-      (!res.ok)
-      ? res.json().then(e => Promise.reject(e))
-      : res.json()
-    )
+    // })
+    // .then(res => 
+    //   (!res.ok)
+    //   ? res.json().then(e => Promise.reject(e))
+    //   : res.json()
+    // )
   //}
-//}
+}
 
 export default PieceApiService

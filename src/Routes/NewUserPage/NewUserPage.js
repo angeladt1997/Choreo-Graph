@@ -1,7 +1,7 @@
 import React from 'react';
 //import { Link } from 'react-router-dom';
-import './NewUser.css';
-import SignupForm from '../../Components/NewUser/NewUser';
+import './NewUserPage.css';
+import NewUserForm from '../../Components/NewUserForm/NewUserForm';
 
 const NewUser = (props) => {
 
@@ -18,7 +18,7 @@ const NewUser = (props) => {
         </h1>
       </div>
       <section className="signupBody">
-        <SignupForm 
+        <NewUserForm 
           onSuccessfulSignup={handleSuccessfulSignup}
         />
       </section>

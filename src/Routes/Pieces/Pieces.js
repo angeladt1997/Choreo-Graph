@@ -1,5 +1,5 @@
 import React from 'react';
-import './Pieces.css';
+// import './Pieces.css';
 
 function Pieces(props) {
   return (

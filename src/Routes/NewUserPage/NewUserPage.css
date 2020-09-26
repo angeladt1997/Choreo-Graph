@@ -1,0 +1,28 @@
+/* h1 {
+  text-align: center;
+}
+
+.registrationForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  align-self: center;
+  margin: auto;
+  padding: 10px;
+}
+
+.signInType {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.selectors {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+
+} */

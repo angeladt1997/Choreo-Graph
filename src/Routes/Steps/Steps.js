@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './Steps.css';
+// import './Steps.css';
 import Pieces from '../../Components/Pieces/Pieces';
 import PieceApiService from '../../Services/piece-api-service';
 

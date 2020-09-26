@@ -1,16 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './ReturningUser.css';
-import LoginForm from '../../Components/ReturningUser/ReturningUser';
+// import './ReturningUser.css';
+import LoginForm from '../../Components/LoginForm/LoginForm';
 
-const ReturningUser = (props) => {
+const LoginPage = (props) => {
   
   const handleSuccessfulLogin = () => {
     const { history } = props
     history.push('/pieces')
- 
+
     if(props.onLogin){
-     
+    
       props.onLogin(true);
     }
   }
@@ -19,7 +19,7 @@ const ReturningUser = (props) => {
     <div className="loginDisplay">
       <div className="loginHeader">
         <h1>
-          Login to Logbook
+          Login to My Pimpin Choreograph
         </h1>
       </div>
 
@@ -32,11 +32,11 @@ const ReturningUser = (props) => {
   );
 }
 
-ReturningUser.defaultProps = {
+LoginPage.defaultProps = {
   location: {},
   history: {
     push: () => {},
   },
 }
 
-export default ReturningUser;
+export default LoginPage;

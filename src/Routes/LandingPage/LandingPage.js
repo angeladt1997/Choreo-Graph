@@ -1,19 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Landing.css';
+import './LandingPage.css';
 
 const LandingPage = (props) => {
   return (
     <div className="landingDisplay">
       <div className="landingHeader">
         <h1>
-          For Choreographers, Bu Choreographers
+          For Choreographers, By Choreographers
         </h1>
       </div>
       <section className="landingBody">
-        <h3>
-          Select your ride
-        </h3>
         <p className="introText">
         Choreo-Graph is an interactive web app made for choreographers and other performing artists as 
     a tool to stage pieces for the purposes of teaching, ease of production communication,
@@ -27,6 +24,7 @@ const LandingPage = (props) => {
     </div>
   );
 }
+
 
 LandingPage.defaultProps = {
   history: {

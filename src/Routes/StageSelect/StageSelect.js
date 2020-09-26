@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './StageSelect.css';
-import StageDisplay from '../../Components/StageDisplay/StageDisplay';
+// import './StageSelect.css';
+// import StageDisplay from '../../Components/StageDisplay/StageDisplay';
 import PieceApiService from '../../Services/piece-api-service';
 
 const StageSelect= (props) => {
@@ -23,7 +23,7 @@ const StageSelect= (props) => {
       <h1>
         Stage
       </h1>
-      <StageDisplay setStage={setStage} stages={stages}/>
+      {/* <StageDisplay setStage={setStage} stages={stages}/> */}
       <button onClick={() => clickNewStage()}>Create New Stage</button>
     </div>
   );
