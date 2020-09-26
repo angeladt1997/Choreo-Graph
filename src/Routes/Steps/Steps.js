@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import './Steps.css';
 import Pieces from '../../Components/Pieces/Pieces';
-import PiecesApiService from '../../Services/pieces-api-service';
+import PieceApiService from '../../Services/piece-api-service';
 
 const Steps = (props) => {
-  const [targetStep, setTargetStep] = useState(undefined)
+  const [targetPiece, setTargetPiece] = useState(undefined)
 
   const { id } = props.match.params
 
   useEffect(() => {
-    PiecesApiService.getTargetPiece(id)
+    PieceApiService.getTargetPiece(id)
       .then(targetPiece => {
         setTargetPiece(targetPiece)
       })
@@ -18,14 +18,14 @@ const Steps = (props) => {
   const changeStep = (PieceId, StepTitle, StepContent) => {
     PieceApiService.changeStep(PieceId, StepTitle, StepContent)
     .then(newStep => {
-      setTargetStep(newStep)
+      targetPiece(newStep)
   })}
 
-  const deleteStep = (pieceId) => {
-    StepApiService.deleteStep(stepId)
-    const { history } = props
-    history.push('/Piece')
-  }
+  // const deleteStep = (pieceId) => {
+  //   PieceApiService.deleteStep(pieceId)
+  //   const { history } = props
+  //   history.push('/Piece')
+  // }
 
   return (
     <div>
@@ -37,7 +37,7 @@ const Steps = (props) => {
         targetPiece={targetPiece} 
         pieceId={id} 
         changeStep={changeStep}
-        deletePiece={deletePiece}
+       // deletePiece={deletePiece}
       /> : 
       <div>Removing Piece. Please wait.</div>}
 

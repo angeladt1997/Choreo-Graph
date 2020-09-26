@@ -32,13 +32,11 @@ const AuthApiService = {
       .then(res => {
       
         TokenService.saveAuthToken(res.authToken)
-        IdleService.registerIdleTimerResets()
-        TokenService.queueCallbackBeforeExpiry(() => {
           AuthApiService.postRefreshToken()
         })
         return res
-      })
-  },
+      }),
+  
 
   postRefreshToken() {
     return fetch(`${config.API_ENDPOINT}/auth/refresh`, {

@@ -4,7 +4,7 @@ import AuthApiService from '../../Services/auth-api-service';
 import './NewUser.css';
 
 const NewUser = (props) => {
-    const [error, setError] = useState(null);
+    //const [error, setError] = useState(null);
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -27,9 +27,9 @@ const NewUser = (props) => {
         studio.value = "STUDIO6"
         props.onSuccessfulSignup
     })
-    .catch(res => {
-        setError(res.error);
-    })
+    // .catch(res => {
+    //     setError(res.error);
+    // })
 }
 
 return (

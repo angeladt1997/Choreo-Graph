@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 import './StageSelect.css';
 import StageDisplay from '../../Components/StageDisplay/StageDisplay';
-import ShipApiService from '../../Services/Stage-api-service';
+import PieceApiService from '../../Services/piece-api-service';
 
 const StageSelect= (props) => {
   const [stages, setStage] = useState([])
 
   const clickNewStage = () => {
-    StageApiService.createStage()
+    PieceApiService.createStage()
       .then(newStage => {
-        const newStage = stages.slice();
+        const newStages = newStage.slice();
 
         newStages.push(newStage)
-        setStages(newStages)
+        setStage(newStage)
         console.log("clickNewStage -> stages", stages)
       })
       .catch(e => console.log(e))
@@ -23,7 +23,7 @@ const StageSelect= (props) => {
       <h1>
         Stage
       </h1>
-      <StageDisplay setStages={setStages} stages={stages}/>
+      <StageDisplay setStage={setStage} stages={stages}/>
       <button onClick={() => clickNewStage()}>Create New Stage</button>
     </div>
   );

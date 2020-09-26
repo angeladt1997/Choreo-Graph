@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import './NewUser.css';
 import SignupForm from '../../Components/NewUser/NewUser';
 
@@ -26,7 +26,7 @@ const NewUser = (props) => {
   );
 }
 
-NewUSer.defaultProps = {
+NewUser.defaultProps = {
   history: {
     push: () => {},
   },
