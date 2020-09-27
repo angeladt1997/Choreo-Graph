@@ -11,8 +11,13 @@ return (
     </div>
     <div className="ViewPieces">
     <Link to='/Pieces' >
-    <button>View Pieces</button>
-  </Link>
+        <button>View Pieces</button>
+    </Link>
+    </div>
+    <div className="logout">
+    <Link to='/Logout' >
+        <button>Logout</button>
+    </Link>
     </div>
   </div>
 )
