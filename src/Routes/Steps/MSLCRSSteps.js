@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import Pieces from '../../Components/Pieces/Pieces';
+import Pieces from '../Pieces/Pieces';
 import PieceApiService from '../../Services/piece-api-service';
+import { Link } from 'react-router-dom';
 
 const MSLCRSSteps = (props) => {
   const [targetPiece, setTargetPiece] = useState(undefined)
@@ -34,6 +35,9 @@ const MSLCRSSteps = (props) => {
         changeStep={changeStep}
       /> : 
       <div>Removing Piece. Please wait.</div>}
+      <Link to='/DashboardPage' >
+          <button>Back to Dashboard</button>
+        </Link>
 
     </div>
   );

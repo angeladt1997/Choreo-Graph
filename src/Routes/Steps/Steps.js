@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-// import './Steps.css';
-import Pieces from '../../Components/Pieces/Pieces';
+import Pieces from '../Pieces/Pieces';
 import PieceApiService from '../../Services/piece-api-service';
+import { Link } from 'react-router-dom';
 
 const Steps = (props) => {
   const [targetPiece, setTargetPiece] = useState(undefined)
@@ -21,11 +21,6 @@ const Steps = (props) => {
       targetPiece(newStep)
   })}
 
-  // const deleteStep = (pieceId) => {
-  //   PieceApiService.deleteStep(pieceId)
-  //   const { history } = props
-  //   history.push('/Piece')
-  // }
 
   return (
     <div>
@@ -37,9 +32,12 @@ const Steps = (props) => {
         targetPiece={targetPiece} 
         pieceId={id} 
         changeStep={changeStep}
-       // deletePiece={deletePiece}
+      
       /> : 
       <div>Removing Piece. Please wait.</div>}
+       <Link to='/DashboardPage' >
+          <button>Back to Dashboard</button>
+        </Link>
 
     </div>
   );

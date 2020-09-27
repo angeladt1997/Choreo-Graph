@@ -11,10 +11,15 @@ function Pieces(props) {
       </h1>
     </div>
     <div className="pieceOptions">
-      
+      <Link to='Steps'>
         <button> 2112</button>
+      </Link>
+      <Link to='/MSLCRSSteps'>
         <button>MSLCRS</button>
-        <button>Baired</button>
+      </Link>
+      <Link to='/BairedSteps'>
+          <button>Baired</button>
+      </Link>
     </div>
     <div className="newPiece">
       <button> Add a New Graph</button>
