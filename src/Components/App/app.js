@@ -12,7 +12,7 @@ import TokenService from '../../Services/token-service'
 import AuthApiService from '../../Services/auth-api-service'
 import Logout from "../../Routes/Logout/Logout";
 import Pieces from "../../Routes/Pieces/Pieces";
-import Steps from "../../Routes/Steps/2112Steps";
+import Steps from "../../Routes/Steps/Steps";
 import MSLCRSSteps from "../../Routes/Steps/MSLCRSSteps";
 import BairedSteps from "../../Routes/Steps/BairedSteps";
 import NotFoundPage from "../../Routes/NotFoundPage/NotFoundPage";
@@ -58,7 +58,7 @@ const App = () => {
           />
 
           <PublicOnlyRoute 
-            path={'/Dashboard'}
+            path={'/DashboardPage'}
             component={DashboardPage}
           />
 
