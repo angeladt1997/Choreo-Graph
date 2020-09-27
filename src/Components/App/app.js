@@ -12,10 +12,12 @@ import TokenService from '../../Services/token-service'
 import AuthApiService from '../../Services/auth-api-service'
 import Logout from "../../Routes/Logout/Logout";
 import Pieces from "../../Routes/Pieces/Pieces";
-import Steps from "../../Routes/Steps/Steps";
+import Steps from "../../Routes/Steps/2112Steps";
+import MSLCRSSteps from "../../Routes/Steps/MSLCRSSteps";
+import BairedSteps from "../../Routes/Steps/BairedSteps";
 import NotFoundPage from "../../Routes/NotFoundPage/NotFoundPage";
-import StageSelect from "../../Routes/StageSelect/StageSelect";
-import About from "../../Routes/About/About";
+
+
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -60,17 +62,22 @@ const App = () => {
             component={DashboardPage}
           />
 
-          <PrivateRoute
-            path={'/StageSelect/:id'}
-            component={StageSelect}
-          />
-          <PrivateRoute
+          <PublicOnlyRoute
             path={'/Pieces'}
             component={Pieces}
           />
           <PrivateRoute
-            path={'/Steps'}
+            path={'/2112'}
             component={Steps}
+          />
+          <PrivateRoute
+            path={'/MSLCRS'}
+            component={MSLCRSSteps}
+          />
+
+         <PrivateRoute
+            path={'/Baired'}
+            component={BairedSteps}
           />
           <PrivateRoute
             path={'/Logout'}
@@ -78,10 +85,7 @@ const App = () => {
               setIsLoggedIn={setIsLoggedIn}
             />}
           />
-          <Route
-            path={'/About'}
-            component={About}
-          />
+          
           <Route 
             component={NotFoundPage}
           />

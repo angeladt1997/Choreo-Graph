@@ -9,9 +9,9 @@ return (
     <div className="header">
        <h1>Your Graphs</h1>
     </div>
-    <div className="selectStage">
-    <Link to='/StageSelect' >
-    <button>Select A Stage</button>
+    <div className="ViewPieces">
+    <Link to='/Pieces' >
+    <button>View Pieces</button>
   </Link>
     </div>
   </div>

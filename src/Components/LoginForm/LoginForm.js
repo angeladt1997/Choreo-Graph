@@ -34,7 +34,7 @@ const LoginForm = (props) => {
       <label htmlFor="password"></label><br/>
       <input className='password' placeholder="password" type='password' required id='password'></input>
 
-      <Link to='/Dashboard'>
+      <Link to='/DashboardPage'>
             <button type="submit" value="Sign Up" className="formButton">Start Graphing</button>
           </Link>
     </form>
