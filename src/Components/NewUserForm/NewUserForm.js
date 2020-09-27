@@ -42,7 +42,7 @@ const NewUserForm = (props) => {
 
           <label htmlFor="passwordVerify" ></label><br/>
           <input className='passwordVerify' type='password' placeholder="Confirm Password" required id='passwordVerify'></input><br/>
-          <Link to='/DashboardPage'>
+          <Link to='/Dashboard'>
             <button type="submit" value="Sign Up" className="formButton">Start Graphing</button>
           </Link>
         </form>

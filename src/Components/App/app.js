@@ -55,7 +55,7 @@ const App = () => {
             componentProps={{onLogin: setIsLoggedIn}}
           />
 
-          <PrivateRoute 
+          <PublicOnlyRoute 
             path={'/Dashboard'}
             component={DashboardPage}
           />
