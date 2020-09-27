@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Switch, Route } from "react-router-dom";
 import "./App.css";
 import NavBar from '../NavBar/NavBar';
+import DashboardPage from '../../Routes/DashboardPage/DashboardPage';
 import PrivateRoute from '../Utils/PrivateRoute';
 import PublicOnlyRoute from '../Utils/PublicOnlyRoute';
 import Landing from "../../Routes/LandingPage/LandingPage";
@@ -42,10 +43,6 @@ const App = () => {
             exact path={'/'}
             component={Landing}
           />
-          {/* <PublicOnlyRoute
-            path={'/login'}
-            component={ReturningUser}
-          /> */}
           
           <PublicOnlyRoute
             path={'/NewUser'}
@@ -57,6 +54,12 @@ const App = () => {
             component={() => <LoginPage onLogin={setIsLoggedIn}/>}
             componentProps={{onLogin: setIsLoggedIn}}
           />
+
+          <PrivateRoute 
+            path={'/Dashboard'}
+            component={DashboardPage}
+          />
+
           <PrivateRoute
             path={'/StageSelect/:id'}
             component={StageSelect}

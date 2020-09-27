@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './LandingPage.css';
+//import ChoreoGraphLogo from '../ChoreographImages/ChoreoGraphLogo.png';
 
 const LandingPage = (props) => {
   return (
@@ -10,6 +11,7 @@ const LandingPage = (props) => {
           For Choreographers, By Choreographers
         </h1>
       </div>
+       
       <section className="landingBody">
         <p className="introText">
         Choreo-Graph is an interactive web app made for choreographers and other performing artists as 
