@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import AuthApiService from '../../Services/auth-api-service';
 import './NewUserForm.css';
+import { Link } from 'react-router-dom';
 
 const NewUserForm = (props) => {
   const [error, setError] = useState(null);
@@ -33,21 +34,23 @@ const NewUserForm = (props) => {
     <>
       <div className="RegistrationForm">
         <form onSubmit={(e) => handleSubmit(e)} className="RegistrationFormContent">
-          <label htmlFor="userName">Username: </label><br/>
-          <input className='username' type='text' required id='username'></input>
+          <label htmlFor="userName" ></label><br/>
+          <input className='username' type='text' placeholder="Username" required id='username'></input>
 
-          <label htmlFor="password">Password:</label><br/>
-          <input className='password' type='password' required id='password'></input>
+          <label htmlFor="password" ></label><br/>
+          <input className='password' type='password' placeholder="password" required id='password'></input>
 
-          <label htmlFor="passwordVerify">Confirm Password:</label><br/>
-          <input className='passwordVerify' type='password' required id='passwordVerify'></input>
-
-          <input type="submit" value="Sign Up" className="formButton"/>
+          <label htmlFor="passwordVerify" ></label><br/>
+          <input className='passwordVerify' type='password' placeholder="Confirm Password" required id='passwordVerify'></input><br/>
+          <Link to='/StageSelect'>
+            <button type="submit" value="Sign Up" className="formButton">Start Graphing</button>
+          </Link>
         </form>
       </div>
         <div role='alert'>
-        {error ? <p className='red'>{error}</p> : null}
-      </div>
+          {error ? <p className='red'>{error}</p> : null}
+        </div>
+      
     </>
   )
 }

@@ -1,6 +1,8 @@
 .App_NavBar {
   margin: 10px;
+  margin-bottom: 20px;
   position: fixed;
   top: 0;
   right: 0;
+  padding-bottom: 20%;
 }

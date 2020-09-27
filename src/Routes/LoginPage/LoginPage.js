@@ -19,7 +19,7 @@ const LoginPage = (props) => {
     <div className="loginDisplay">
       <div className="loginHeader">
         <h1>
-          Login to My Pimpin Choreograph
+          Login to Choreo-Graph
         </h1>
       </div>
 
