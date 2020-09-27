@@ -22,6 +22,9 @@ const LandingPage = (props) => {
         <Link to='/NewUser' >
           <button>Create Account</button>
         </Link>
+        <Link to='/Login' >
+          <button>Login to Existing Account</button>
+        </Link>
       </section>
     </div>
   );

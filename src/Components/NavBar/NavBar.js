@@ -6,12 +6,11 @@ import { Link } from 'react-router-dom';
 const NavBar = (props) => {
   return props.isLoggedIn ? (
     <div className="header">
-      <Link to='/StageSelect/:id'>
-        My Stage
-      </Link>
-      {" | "}
       <Link to='/logout'>
         Logout
+      </Link>
+      <Link to='/Pieces'>
+        Pieces
       </Link>
     </div>
   ) : (
