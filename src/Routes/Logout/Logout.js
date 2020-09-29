@@ -21,7 +21,7 @@ const LogoutPage = (props) => {
     <div>
       <h1>Logout Page</h1>
       <p>Return to homepage to login</p>
-      <Link to='/Landing'>
+      <Link to='/LandingPage'>
           <button>Home</button>
       </Link>
     </div>
