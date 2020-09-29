@@ -34,7 +34,8 @@ const MSLCRSSteps = (props) => {
         pieceId={id} 
         changeStep={changeStep}
       /> : 
-      <div>Removing Piece. Please wait.</div>}
+      <div>Dancer (soloist) starts downstage in the chair facing upstage <br></br>
+      with a large mirror covering the back sham.</div>}
       <Link to='/DashboardPage' >
           <button>Back to Dashboard</button>
         </Link>

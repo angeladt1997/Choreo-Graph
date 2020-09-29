@@ -34,7 +34,9 @@ const Steps = (props) => {
         changeStep={changeStep}
       
       /> : 
-      <div>Removing Piece. Please wait.</div>}
+      <div>One dance initiates snapping. <br></br>
+       All other dancers slowly join in. <br></br> 
+       Dancer who starts snaps gives a loud clap to stop it</div>}
        <Link to='/DashboardPage' >
           <button>Back to Dashboard</button>
         </Link>
