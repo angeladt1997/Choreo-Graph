@@ -34,7 +34,8 @@ const BairedSteps = (props) => {
         pieceId={id} 
         changeStep={changeStep}
       /> : 
-      <div>Removing Piece. Please wait.</div>}
+      <div>Dancers solo onto stage from opposite downstage wings, <br></br>
+       one mover at a time with a 30 second space of time between enterances</div>}
       <Link to='/DashboardPage' >
           <button>Back to Dashboard</button>
         </Link>

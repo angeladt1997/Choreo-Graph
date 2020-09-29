@@ -53,29 +53,29 @@ const App = () => {
             componentProps={{onLogin: setIsLoggedIn}}
           />
 
-          <PrivateRoute 
+          <PublicOnlyRoute 
             path={'/DashboardPage'}
             component={DashboardPage}
           />
 
-          <PrivateRoute
+          <PublicOnlyRoute
             path={'/Pieces'}
             component={Pieces}
           />
-          <PrivateRoute
+          <PublicOnlyRoute
             path={'/2112'}
             component={Steps}
           />
-          <PrivateRoute
+          <PublicOnlyRoute
             path={'/MSLCRS'}
             component={MSLCRSSteps}
           />
 
-          <PrivateRoute
+          <PublicOnlyRoute
             path={'/Baired'}
             component={BairedSteps}
           />
-          <PrivateRoute
+          <PublicOnlyRoute
             path={'/Logout'}
             component={() => <Logout
               setIsLoggedIn={setIsLoggedIn}
