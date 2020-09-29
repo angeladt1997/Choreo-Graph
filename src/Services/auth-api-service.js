@@ -18,6 +18,7 @@ const AuthApiService = {
   },
   postLogin({ username, password }) {
     return fetch(`${config.API_ENDPOINT}/auth/login`, {
+      
       method: 'POST',
       headers: {
         'content-type': 'application/json',
@@ -25,6 +26,7 @@ const AuthApiService = {
       body: JSON.stringify({ username, password }),
     })
       .then(res =>
+        console.log('In login')
         (!res.ok)
           ? res.json().then(e => Promise.reject(e))
           : res.json()

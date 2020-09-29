@@ -26,7 +26,7 @@ const BairedSteps = (props) => {
   return (
     <div>
       <h1>
-        MSLCRS 
+        Baired Steps 
       </h1>
       {targetPiece ? 
       <Pieces

@@ -25,7 +25,7 @@ const Steps = (props) => {
   return (
     <div>
       <h1>
-        Piece Steps 
+        2112 Steps 
       </h1>
       {targetPiece ? 
       <Pieces

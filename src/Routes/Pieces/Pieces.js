@@ -11,13 +11,13 @@ function Pieces(props) {
       </h1>
     </div>
     <div className="pieceOptions">
-      <Link to='Steps'>
+      <Link to='/2112'>
         <button> 2112</button>
       </Link>
-      <Link to='/MSLCRSSteps'>
+      <Link to='/MSLCRS'>
         <button>MSLCRS</button>
       </Link>
-      <Link to='/BairedSteps'>
+      <Link to='/Baired'>
           <button>Baired</button>
       </Link>
     </div>

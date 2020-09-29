@@ -75,7 +75,7 @@ const App = () => {
             component={MSLCRSSteps}
           />
 
-         <PrivateRoute
+          <PrivateRoute
             path={'/Baired'}
             component={BairedSteps}
           />
