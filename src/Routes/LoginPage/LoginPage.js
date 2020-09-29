@@ -27,9 +27,11 @@ const LoginPage = (props) => {
           onSuccessfulLogin={handleSuccessfulLogin}
         />
       </section>
-    </div>
+    </div>   
+    
   );
 }
+
 
 LoginPage.defaultProps = {
   location: {},
