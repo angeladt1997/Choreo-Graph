@@ -9,8 +9,8 @@ const NavBar = (props) => {
       <Link to='/logout'>
         Logout
       </Link>
-      <Link to='/Pieces'>
-        Pieces
+      <Link to='/DashboardPage'>
+        Dashboard
       </Link>
     </div>
   ) : (

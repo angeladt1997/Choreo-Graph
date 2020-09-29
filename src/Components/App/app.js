@@ -18,19 +18,15 @@ import BairedSteps from "../../Routes/Steps/BairedSteps";
 import NotFoundPage from "../../Routes/NotFoundPage/NotFoundPage";
 
 
-
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  
+
   useEffect(() => {
     if (TokenService.hasAuthToken()) {
       setIsLoggedIn(true)
-
-      TokenService.queueCallbackBeforeExpiry(() => {
-        AuthApiService.postRefreshToken()
-      })
     } 
   },[])
+
 
   return (
     <div className="App">
@@ -57,12 +53,12 @@ const App = () => {
             componentProps={{onLogin: setIsLoggedIn}}
           />
 
-          <PublicOnlyRoute 
+          <PrivateRoute 
             path={'/DashboardPage'}
             component={DashboardPage}
           />
 
-          <PublicOnlyRoute
+          <PrivateRoute
             path={'/Pieces'}
             component={Pieces}
           />
@@ -88,7 +84,7 @@ const App = () => {
           
           <Route 
             component={NotFoundPage}
-          />
+          /> 
         </Switch>
       </main>
     </div>

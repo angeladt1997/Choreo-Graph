@@ -8,7 +8,6 @@ const LoginForm = (props) => {
   const [error, setError] = useState(null);
 
   const handleSubmitJwtAuth = (e) => {
-    console.log('In handleSubmit');
     e.preventDefault()
     
     const {username, password} = e.target;

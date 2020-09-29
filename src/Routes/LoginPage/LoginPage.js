@@ -9,7 +9,6 @@ const LoginPage = (props) => {
     history.push('/pieces')
 
     if(props.onLogin){
-    
       props.onLogin(true);
     }
   }

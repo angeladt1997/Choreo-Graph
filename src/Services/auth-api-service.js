@@ -11,6 +11,7 @@ const AuthApiService = {
       body: JSON.stringify(user),
     })
       .then(res =>
+        console.log('In post user')
         (!res.ok)
           ? res.json().then(e => Promise.reject(e))
           : res.json()
@@ -26,19 +27,16 @@ const AuthApiService = {
       body: JSON.stringify({ username, password }),
     })
       .then(res =>
-        // console.log('In login')
         (!res.ok)
           ? res.json().then(e => Promise.reject(e))
           : res.json()
       )
       .then(res => {
         TokenService.saveAuthToken(res.authToken)
-        AuthApiService.postRefreshToken()
-        // return res
+
+        return res
       })
   },
-  
-
   postRefreshToken() {
     return fetch(`${config.API_ENDPOINT}/auth/refresh`, {
       method: 'POST',
@@ -52,7 +50,11 @@ const AuthApiService = {
           : res.json()
       )
       .then(res => {
-    
+        /*
+          similar logic to whenever a user logs in, the only differences are:
+          - we don't need to queue the idle timers again as the user is already logged in.
+          - we'll catch the error here as this refresh is happening behind the scenes
+        */
         TokenService.saveAuthToken(res.authToken)
         TokenService.queueCallbackBeforeExpiry(() => {
           AuthApiService.postRefreshToken()
@@ -60,7 +62,7 @@ const AuthApiService = {
         return res
       })
       .catch(err => {
-      
+        // console.log('refresh token request error')
         console.error(err)
       })
   },
