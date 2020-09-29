@@ -24,7 +24,9 @@ const LoginPage = (props) => {
       <section className="loginBody">
         <LoginForm
           onSuccessfulLogin={handleSuccessfulLogin}
+          
         />
+      
       </section>
     </div>   
     
