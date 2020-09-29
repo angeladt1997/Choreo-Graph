@@ -22,7 +22,7 @@ const LoginForm = (props) => {
       password.value= ""
       props.onSuccessfulLogin()
     })
-    .cath(res => {
+    .catch(res => {
       setError(res.error);
     })
   }
