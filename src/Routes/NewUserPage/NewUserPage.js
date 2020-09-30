@@ -1,8 +1,9 @@
 import React from 'react';
-
 import './NewUserPage.css';
 import NewUserForm from '../../Components/NewUserForm/NewUserForm';
 
+//this page just adds the functionality to the NewUserForm and 
+//gives it its place in the app
 const NewUser = (props) => {
 
   const handleSuccessfulSignup = user => {

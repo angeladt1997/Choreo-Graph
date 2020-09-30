@@ -9,12 +9,14 @@ const NewUserForm = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault()
     const { username, password, passwordVerify } = e.target
-
+    //there should be two input boxes on the form below so users double check 
+    //password matches before creating account
     if(password.value !== passwordVerify.value){
       setError("Password do not match");
       return;
     }
-
+    //makes a post to the api to create a new user and insert it into the choreograph
+    //database
     AuthApiService.postUser({
         username: username.value,
         password: password.value,
@@ -31,6 +33,7 @@ const NewUserForm = (props) => {
   }
 
   return (
+    //user entries will be checked to meet password requirements through the database. 
     <>
       <div className="RegistrationForm">
         <form onSubmit={(e) => handleSubmit(e)} className="RegistrationFormContent">

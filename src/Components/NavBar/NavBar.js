@@ -1,9 +1,10 @@
 import React from 'react';
 import './NavBar.css';
 import { Link } from 'react-router-dom';
-// import LogoutPage from '../LogoutPage/LogoutPage'
+ 
 
 const NavBar = (props) => {
+  //bar has dashboard and logout only when users are signed in
   return props.isLoggedIn ? (
     <div className="header">
       <Link to='/logout'>
@@ -14,6 +15,7 @@ const NavBar = (props) => {
       </Link>
     </div>
   ) : (
+    //public links used for sign in
     <div className="header">
       <Link to='/NewUser'>
         Create Account

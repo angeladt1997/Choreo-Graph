@@ -16,10 +16,13 @@ const LogoutPage = (props) => {
   }
 
   handleLogoutSuccess()
+  //Will in the future add a confirmation to this page, for now,
+  //when you get here, you can only follow through with logging
+  //out or pressing the back button
 
   return (
     <div>
-      <h1>Logout Page</h1>
+      <h1>I have graphed to my heart's content!</h1>
       <p>Return to homepage to login</p>
       <Link to='/'>
           <button>Home</button>

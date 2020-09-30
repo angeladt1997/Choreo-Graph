@@ -51,7 +51,9 @@ const App = () => {
             component={() => <LoginPage onLogin={setIsLoggedIn}/>}
             componentProps={{onLogin: setIsLoggedIn}}
           />
-
+          {//remaining routes are reserved only for users who log in 
+          //with the correct credentials}
+          }
           <PrivateRoute 
             path={'/DashboardPage'}
             component={DashboardPage}
@@ -81,6 +83,9 @@ const App = () => {
             />}
           />
           
+          {
+            //route that requires no authentication at all, just returns 404
+          }
           <Route 
             component={NotFoundPage}
           /> 

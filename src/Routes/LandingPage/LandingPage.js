@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './LandingPage.css';
-//import ChoreoGraphLogo from '../ChoreographImages/ChoreoGraphLogo.png';
+
 
 const LandingPage = (props) => {
+  //home page. public usage, just gives an overview of the app and allows 
+  //users to choose a login option
   return (
     <div className="landingDisplay">
       <div className="landingHeader">
@@ -13,6 +15,11 @@ const LandingPage = (props) => {
       </div>
        
       <section className="landingBody">
+        {
+          //as of now, I know this password looks ridiculous, but it was formed
+          //using a hash. I have not figured out how to get it to let me make
+          //more human looking passwords.
+        }
         <p className="introText">
         Choreo-Graph is an interactive web app made for choreographers and other performing artists as 
     a tool to stage pieces for the purposes of teaching, ease of production communication,
