@@ -3,7 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import "./App.css";
 import NavBar from '../NavBar/NavBar';
 import DashboardPage from '../../Routes/DashboardPage/DashboardPage';
-//import PrivateRoute from '../Utils/PrivateRoute';
+import PrivateRoute from '../Utils/PrivateRoute';
 import PublicOnlyRoute from '../Utils/PublicOnlyRoute';
 import Landing from "../../Routes/LandingPage/LandingPage";
 import NewUser from "../../Routes/NewUserPage/NewUserPage";
@@ -52,29 +52,29 @@ const App = () => {
             componentProps={{onLogin: setIsLoggedIn}}
           />
 
-          <PublicOnlyRoute 
+          <PrivateRoute 
             path={'/DashboardPage'}
             component={DashboardPage}
           />
 
-          <PublicOnlyRoute
+          <PrivateRoute
             path={'/Pieces'}
             component={Pieces}
           />
-          <PublicOnlyRoute
+          <PrivateRoute
             path={'/2112'}
             component={Steps}
           />
-          <PublicOnlyRoute
+          <PrivateRoute
             path={'/MSLCRS'}
             component={MSLCRSSteps}
           />
 
-          <PublicOnlyRoute
+          <PrivateRoute
             path={'/Baired'}
             component={BairedSteps}
           />
-          <PublicOnlyRoute
+          <PrivateRoute
             path={'/Logout'}
             component={() => <Logout
               setIsLoggedIn={setIsLoggedIn}
