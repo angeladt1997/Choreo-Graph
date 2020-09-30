@@ -1,8 +1,11 @@
 import LoginPage from './LoginPage';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 
-it('should direct user to Dashboard', () => {
-    const input = 'Dashboard';
-    const expectedOutput = '<div className="loginDisplay"><div className="loginHeader"><h1>Login to Choreo-Graph</h1></div><section className="loginBody"><LoginForm onSuccessfulLogin={[Function handleSuccessfulLogin]} /></section></div>'
-    const actualOutput = LoginPage(input);
-    expect(actualOutput).toBe(expectedOutput)
-})
+describe("LoginPage", () => {
+    it("renders without crashing", () => {
+      const div = document.createElement("div");
+      ReactDOM.render(<BrowserRouter><LoginPage /></BrowserRouter>, div);
+    });
+  });

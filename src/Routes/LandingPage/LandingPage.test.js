@@ -1,8 +1,11 @@
 import LandingPage from './LandingPage';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 
-it('should direct user to login option', () => {
-    const input = 'create new user';
-    const expectedOutput = '<div className="landingDisplay"><div className="landingHeader">'
-    const actualOutput = LandingPage(input);
-    expect(actualOutput).toBe(expectedOutput)
-})
+describe("LandingPage", () => {
+    it("renders without crashing", () => {
+      const div = document.createElement("div");
+      ReactDOM.render(<BrowserRouter><LandingPage /></BrowserRouter>, div);
+    });
+  });

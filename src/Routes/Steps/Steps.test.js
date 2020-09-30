@@ -1,8 +1,11 @@
 import Steps from './Steps';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 
-it('GET steps from db', () => {
-    const input = 'View Steps';
-    const expectedOutput = ' <Link to=\'/Steps\'><button>steps</button></Link>'
-    const actualOutput = Steps(input);
-    expect(actualOutput).toBe(expectedOutput)
-})
+describe("Steps", () => {
+    it("renders without crashing", () => {
+      const div = document.createElement("div");
+      ReactDOM.render(<BrowserRouter><Steps /></BrowserRouter>, div);
+    });
+  });

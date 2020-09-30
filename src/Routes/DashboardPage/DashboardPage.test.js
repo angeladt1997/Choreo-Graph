@@ -1,8 +1,11 @@
-import Dashboard from './Dashboard';
+import DashboardPage from './DashboardPage';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 
-it('should allow user to view pieces', () => {
-    const input = 'View Pieces';
-    const expectedOutput = ' <Link to=\'/Pieces\'><button>View Pieces</button></Link>'
-    const actualOutput = Dashboard(input);
-    expect(actualOutput).toBe(expectedOutput)
-})
+describe("DashboardPage", () => {
+    it("renders without crashing", () => {
+      const div = document.createElement("div");
+      ReactDOM.render(<BrowserRouter><DashboardPage /></BrowserRouter>, div);
+    });
+  });

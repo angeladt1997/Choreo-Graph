@@ -1,8 +1,11 @@
 import Logout from './Logout';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 
-it('should direct user to Landing', () => {
-    const input = 'Logout';
-    const expectedOutput = '  <div><h1>Logout Page</h1><p>Return to homepage to login</p><Link to=\'/Landing\'><button>Home</button></Link>  </div>'
-    const actualOutput = Logout(input);
-    expect(actualOutput).toBe(expectedOutput)
-})
+describe("Logout", () => {
+    it("renders without crashing", () => {
+      const div = document.createElement("div");
+      ReactDOM.render(<BrowserRouter><Logout /></BrowserRouter>, div);
+    });
+  });
