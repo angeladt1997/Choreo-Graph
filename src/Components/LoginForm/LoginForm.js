@@ -11,7 +11,7 @@ const LoginForm = (props) => {
     e.preventDefault()
     
     const {username, password} = e.target;
-
+    //pulls in information from the choreograph api for login verification
     AuthApiService.postLogin({
       username: username.value,
       password: password.value,
@@ -25,15 +25,23 @@ const LoginForm = (props) => {
       setError(res.error);
     })
   }
+  //for for login body, on successful completion, user will be redirected to 
+  //dashboard. If not, no action will take place
   return (
   <div>
     <form className="loginForm" onSubmit={(e)=> handleSubmitJwtAuth(e)}>
-      <label htmlFor="userName"></label><br/>
-      <input className='username' placeholder="username" type='text' required id='username'></input>
-
-      <label htmlFor="password"></label><br/>
-      <input className='password' placeholder="password" type='password' required id='password'></input>
-
+        <div className="name-section">
+          <input className='username'  type='text' required id='username' autocomplete="off">
+            <label htmlFor="userName" class="label-name">
+              <span class="content-name">Username</span>
+            </label><br/>
+          </input>
+          <input className='password' type='password' required id='password' autocomplete="off">
+            <label htmlFor="password" class="label-name">
+              <span class="content-name">password</span>
+            </label><br/>
+          </input>
+        </div>
        <Link to='/DashboardPage'> 
         <button type="submit" value="Sign Up" className="formButton">Start Graphing</button>
       </Link> 

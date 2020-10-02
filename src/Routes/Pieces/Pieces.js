@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import './Pieces.css';
 
+//this page simply allows users to click on whatever piece they would like to
+//see the steps to.
 function Pieces(props) {
   return (
     <div className = "PiecePage">
