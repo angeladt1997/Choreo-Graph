@@ -18,7 +18,7 @@ h1 {
 }
 
 body {
-    background-image: linear-gradient(to left, rgb(126, 122, 122), rgba(173, 135, 28, 0),  rgb(126, 122, 122));
+    background-image: linear-gradient(to left, lightblue, lightpink, lightblue)
 }
 
 
