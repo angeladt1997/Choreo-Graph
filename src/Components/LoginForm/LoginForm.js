@@ -31,16 +31,16 @@ const LoginForm = (props) => {
   <div>
     <form className="loginForm" onSubmit={(e)=> handleSubmitJwtAuth(e)}>
         <div className="name-section">
-          <input className='username'  type='text' required id='username' autocomplete="off">
             <label htmlFor="userName" class="label-name">
-              <span class="content-name">Username</span>
-            </label><br/>
-          </input>
-          <input className='password' type='password' required id='password' autocomplete="off">
-            <label htmlFor="password" class="label-name">
-              <span class="content-name">password</span>
-            </label><br/>
-          </input>
+              <span className="content-name">Username</span>
+              <input className='username'  type='text' required id='username' autocomplete="off">                
+              </input>
+            </label><br/>          
+           <label htmlFor="password" class="label-name">
+             <span className="content-name">password</span>
+              <input className='password' type='password' required id='password' autocomplete="off">
+              </input>
+           </label><br/>          
         </div>
        <Link to='/DashboardPage'> 
         <button type="submit" value="Sign Up" className="formButton">Start Graphing</button>
