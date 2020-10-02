@@ -11,4 +11,32 @@
   body{
     background-color: lightskyblue;
   }
+  .loginForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70px;
+    align-self: center;
+    padding: 0px;
+    margin: auto;
+  }
+
+  .content-name{
+    color: black;
+    font-size: 10px;
+    margin: auto;
+  }
+
+  .introText{
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .pieceOptions {
+    display: flex;
+    flex-direction: column;
+    margin: 4px;
+  }
 }

@@ -38,15 +38,18 @@ const NewUserForm = (props) => {
       <div className="RegistrationForm">
         <form onSubmit={(e) => handleSubmit(e)} className="RegistrationFormContent">
           <label htmlFor="userName" ></label><br/>
-          <input className='username' type='text' placeholder="Username" required id='username'></input>
+          <span className="content-name">Username</span>
+          <input className='username' type='text'  required id='username'></input>
 
           <label htmlFor="password" ></label><br/>
-          <input className='password' type='password' placeholder="password" required id='password'></input>
+          <span className="content-name">Password</span>
+          <input className='password' type='password' required id='password'></input>
 
           <label htmlFor="passwordVerify" ></label><br/>
-          <input className='passwordVerify' type='password' placeholder="Confirm Password" required id='passwordVerify'></input><br/>
+          <span className="content-name">Confirm</span>
+          <input className='passwordVerify' type='password' required id='passwordVerify'></input><br/>
           <Link to='/DashboardPage'>
-            <button type="submit" value="Sign Up" className="formButton">Start Graphing</button>
+            <button type="submit" value="Sign Up" className="formButtonTwo">Start Graphing</button>
           </Link>
         </form>
       </div>

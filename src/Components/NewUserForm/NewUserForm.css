@@ -18,7 +18,7 @@ h1 {
 }
 
 body {
-    background-color: lightgrey;
+    background-image: linear-gradient(to left, rgb(126, 122, 122), rgba(173, 135, 28, 0),  rgb(126, 122, 122));
 }
 
 
@@ -26,6 +26,24 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.passwordVerify {
+    border-radius: 8px;
+}
+
+.formButtonTwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 26px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 6px;
+    cursor: pointer;
+    color: black;
+    text-decoration-color: red;
 }
 
 .selectors {
