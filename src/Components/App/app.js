@@ -3,7 +3,6 @@ import { Switch, Route } from "react-router-dom";
 import "./App.css";
 import NavBar from '../NavBar/NavBar';
 import DashboardPage from '../../Routes/DashboardPage/DashboardPage';
-import PrivateRoute from '../Utils/PrivateRoute';
 import PublicOnlyRoute from '../Utils/PublicOnlyRoute';
 import Landing from "../../Routes/LandingPage/LandingPage";
 import NewUser from "../../Routes/NewUserPage/NewUserPage";
@@ -51,10 +50,9 @@ const App = () => {
             component={() => <LoginPage onLogin={setIsLoggedIn}/>}
             componentProps={{onLogin: setIsLoggedIn}}
           />
-          {//remaining routes are reserved only for users who log in 
-          //with the correct credentials}
+       
           }
-          <PrivateRoute 
+          <PublicOnlyRoute 
             path={'/DashboardPage'}
             component={DashboardPage}
           />
@@ -63,11 +61,11 @@ const App = () => {
             path={'/Pieces'}
             component={Pieces}
           />
-          <PrivateRoute
+          <PublicOnlyRoute
             path={'/2112'}
             component={Steps}
           />
-          <PrivateRoute
+          <PublicOnlyRoute
             path={'/MSLCRS'}
             component={MSLCRSSteps}
           />
@@ -76,7 +74,7 @@ const App = () => {
             path={'/Baired'}
             component={BairedSteps}
           />
-          <PrivateRoute
+          <PublicOnlyRoute
             path={'/Logout'}
             component={() => <Logout
               setIsLoggedIn={setIsLoggedIn}
