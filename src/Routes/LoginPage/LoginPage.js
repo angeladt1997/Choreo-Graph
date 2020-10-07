@@ -4,7 +4,7 @@ const LoginPage = (props) => {
   
   const handleSuccessfulLogin = () => {
     const { history } = props
-    history.push('/pieces')
+    history.push('/dashboard')
 
     if(props.onLogin){
       props.onLogin(true);

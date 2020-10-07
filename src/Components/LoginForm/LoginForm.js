@@ -27,18 +27,20 @@ const LoginForm = (props) => {
   }
   //for for login body, on successful completion, user will be redirected to 
   //dashboard. If not, no action will take place
+     // <form className="loginForm" onSubmit={(e)=> handleSubmitJwtAuth(e)}>
   return (
   <div>
-    <form className="loginForm" onSubmit={(e)=> handleSubmitJwtAuth(e)}>
+
+  <form className="loginForm" onSubmit={(e)=> this.handleSubmitJwtAuth(e)}> 
         <div className="name-section">
-            <label htmlFor="userName" class="label-name">
+            <label htmlFor="userName" className="label-name">
               <span className="content-name">Username</span>
-              <input className='username'  type='text' required id='username' autocomplete="off">                
+              <input className='username'  type='text' required id='username' >                
               </input>
             </label><br/>          
-           <label htmlFor="password" class="label-name">
+           <label htmlFor="password" className="label-name">
              <span className="content-name">password</span>
-              <input className='password' type='password' required id='password' autocomplete="off">
+              <input className='password' type='password' required id='password'>
               </input>
            </label><br/>          
         </div>
