@@ -46,7 +46,7 @@ const App = () => {
             component={NewUser}
           />
 
-          <PrivateRoute
+          <PublicOnlyRoute
             path={'/login'}
             component={() => <LoginPage onLogin={setIsLoggedIn}/>}
             componentProps={{onLogin: setIsLoggedIn}}

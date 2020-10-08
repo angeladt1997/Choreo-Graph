@@ -31,7 +31,7 @@ const LoginForm = (props) => {
   return (
   <div>
 
-  <form className="loginForm" onSubmit={(e)=> this.handleSubmitJwtAuth(e)}> 
+  <form className="loginForm" onSubmit={(e)=> handleSubmitJwtAuth(e)}> 
         <div className="name-section">
             <label htmlFor="userName" className="label-name">
               <span className="content-name">Username</span>
