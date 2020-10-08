@@ -18,6 +18,7 @@ const AuthApiService = {
       )
   },
   postLogin({ username, password }) {
+    console.log('Login attempt from client side.')
     return fetch(`${config.API_ENDPOINT}/auth/login`, {
       
       method: 'POST',
@@ -25,6 +26,7 @@ const AuthApiService = {
         'content-type': 'application/json',
       },
       body: JSON.stringify({ username, password }),
+      
     })
       .then(res =>
         (!res.ok)
