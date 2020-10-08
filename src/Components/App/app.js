@@ -75,7 +75,7 @@ const App = () => {
             path={'/Baired'}
             component={BairedSteps}
           />
-          <PublicOnlyRoute
+          <PrivateRoute
             path={'/Logout'}
             component={() => <Logout
               setIsLoggedIn={false}
