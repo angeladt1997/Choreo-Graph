@@ -4,7 +4,7 @@ import config from '../config'
 
 const PieceApiService = {
   getPieces(){
-    return fetch(`${config.API_ENDPOINT}/Stage`, {
+    return fetch(`${config.API_ENDPOINT}/piece`, {
       headers: {
         'content-type': 'application/json',
         'authorization': `bearer ${TokenService.getAuthToken()}`,
@@ -17,7 +17,7 @@ const PieceApiService = {
     )
   },
   getTargetPiece(pieceId){
-    return fetch(`${config.API_ENDPOINT}/Stage/`, {
+    return fetch(`${config.API_ENDPOINT}/piece/`, {
       headers: {
         'content-type': 'application/json',
         'authorization': `bearer ${TokenService.getAuthToken()}`,
@@ -30,7 +30,7 @@ const PieceApiService = {
     )
   },
   changeStep(pieceId, stepTitle, stepContent){
-    return fetch(`${config.API_ENDPOINT}/Stage/${pieceId}`, {
+    return fetch(`${config.API_ENDPOINT}/piece/${pieceId}`, {
       method: 'POST',
       headers: {
         'content-type': 'application/json',
@@ -48,7 +48,7 @@ const PieceApiService = {
     )
   },
   createPiece(){
-    return fetch(`${config.API_ENDPOINT}/Stage`, {
+    return fetch(`${config.API_ENDPOINT}/piece`, {
       method: 'POST',
       headers: {
         'content-type': 'application/json',

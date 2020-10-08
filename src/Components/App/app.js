@@ -78,7 +78,7 @@ const App = () => {
           <PublicOnlyRoute
             path={'/Logout'}
             component={() => <Logout
-              setIsLoggedIn={setIsLoggedIn}
+              setIsLoggedIn={false}
             />}
           />
           
