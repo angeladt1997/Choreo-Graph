@@ -26,7 +26,6 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/angeladt1997/Choreo-Graph.git"
@@ -45,5 +44,4 @@
   "devDependencies": {
     "react-test-renderer": "^16.13.1"
   }
- 
 }
