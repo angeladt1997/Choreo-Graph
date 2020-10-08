@@ -26,7 +26,7 @@ const LandingPage = (props) => {
     and at-home studying. In order to get started, click on login. You can use this username and password 
     to access the website! 
     Username: dunder 
-    Password $2a$12$lHK6LVpc15/ZROZcKU00QeiD.RyYq5dVlV/9m4kKYbGibkRc5l4Ne
+    Password: password123
         </p>
         <Link to='/NewUser' >
           <button>Create Account</button>
