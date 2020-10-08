@@ -46,14 +46,13 @@ const App = () => {
             component={NewUser}
           />
 
-          <PublicOnlyRoute
+          <PrivateRoute
             path={'/login'}
             component={() => <LoginPage onLogin={setIsLoggedIn}/>}
             componentProps={{onLogin: setIsLoggedIn}}
           />
-          {//remaining routes are reserved only for users who log in 
-          //with the correct credentials}
-          }
+       
+          
           <PrivateRoute 
             path={'/DashboardPage'}
             component={DashboardPage}
@@ -63,11 +62,11 @@ const App = () => {
             path={'/Pieces'}
             component={Pieces}
           />
-          <PrivateRoute
+          <PublicOnlyRoute
             path={'/2112'}
             component={Steps}
           />
-          <PrivateRoute
+          <PublicOnlyRoute
             path={'/MSLCRS'}
             component={MSLCRSSteps}
           />
@@ -76,7 +75,7 @@ const App = () => {
             path={'/Baired'}
             component={BairedSteps}
           />
-          <PrivateRoute
+          <PublicOnlyRoute
             path={'/Logout'}
             component={() => <Logout
               setIsLoggedIn={setIsLoggedIn}
