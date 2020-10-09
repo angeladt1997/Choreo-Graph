@@ -1,4 +1,4 @@
-.App_NavBar {
+/* .App_NavBar {
   margin: auto;  
   padding-left: 30%;
 }
@@ -57,15 +57,13 @@ body{
   display: flex;
   flex-direction: column;
   margin: 4px;
-}
+} */
 
-@media screen and (min-width: 600px){
   .App_NavBar {
-  margin: 10px;
-  margin-bottom: 20px;
+  margin: 10%;
+  margin-bottom: 20%;
   position: fixed;
   top: 0;
   right: 0;
   padding-bottom: 20%;
-}
 }

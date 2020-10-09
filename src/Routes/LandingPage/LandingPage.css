@@ -1,6 +1,5 @@
 
 
-@media screen and (min-width: 600px) {
 
   .center {
     text-align: center;
@@ -18,10 +17,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 150px;
+    width: 150%;
     align-self: center;
     margin: auto;
-    padding: 50px;
+    padding: 50%;
 
   }
-}
