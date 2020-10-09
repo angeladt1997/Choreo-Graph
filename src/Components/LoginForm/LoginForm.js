@@ -1,7 +1,9 @@
 import React, {useState} from 'react';
 import AuthApiService from '../../Services/auth-api-service';
 import './LoginForm.css';
-import { Link } from 'react-router-dom';
+
+
+
 
 
 const LoginForm = (props) => {
@@ -44,9 +46,9 @@ const LoginForm = (props) => {
               </input>
            </label><br/>          
         </div>
-       {/* <Link to='/DashboardPage'>  */}
+        
         <button type="submit" value="Sign Up" className="formButton">Start Graphing</button>
-      {/* </Link>  */}
+       
     </form>
   </div>
   )

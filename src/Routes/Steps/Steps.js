@@ -15,11 +15,6 @@ const Steps = (props) => {
       })
   },[id])
 
-  const changeStep = (PieceId, StepTitle, StepContent) => {
-    PieceApiService.changeStep(PieceId, StepTitle, StepContent)
-    .then(newStep => {
-      targetPiece(newStep)
-  })}
 
 
   return (
@@ -31,7 +26,7 @@ const Steps = (props) => {
       <Pieces
         targetPiece={targetPiece} 
         pieceId={id} 
-        changeStep={changeStep}
+        
       
       /> : 
       <div>One dance initiates snapping. <br></br>

@@ -62,11 +62,11 @@ const App = () => {
             path={'/Pieces'}
             component={Pieces}
           />
-          <PublicOnlyRoute
+          <PrivateRoute
             path={'/2112'}
             component={Steps}
           />
-          <PublicOnlyRoute
+          <PrivateRoute
             path={'/MSLCRS'}
             component={MSLCRSSteps}
           />
@@ -75,10 +75,10 @@ const App = () => {
             path={'/Baired'}
             component={BairedSteps}
           />
-          <PublicOnlyRoute
+          <PrivateRoute
             path={'/Logout'}
             component={() => <Logout
-              setIsLoggedIn={setIsLoggedIn}
+              setIsLoggedIn={false}
             />}
           />
           

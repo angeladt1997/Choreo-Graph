@@ -15,12 +15,6 @@ const MSLCRSSteps = (props) => {
       })
   },[id])
 
-  const changeStep = (PieceId, StepTitle, StepContent) => {
-    PieceApiService.changeStep(PieceId, StepTitle, StepContent)
-    .then(newStep => {
-      targetPiece(newStep)
-  })}
-
 
 
   return (
@@ -32,7 +26,7 @@ const MSLCRSSteps = (props) => {
       <Pieces
         targetPiece={targetPiece} 
         pieceId={id} 
-        changeStep={changeStep}
+        
       /> : 
       <div>Dancer (soloist) starts downstage in the chair facing upstage <br></br>
       with a large mirror covering the back sham.</div>}
