@@ -15,12 +15,6 @@ const MSLCRSSteps = (props) => {
       })
   },[id])
 
-  const changeStep = (PieceId, StepTitle, StepContent) => {
-    PieceApiService.changeStep(PieceId, StepTitle, StepContent)
-    .then(newStep => {
-      targetPiece(newStep)
-  })}
-
 
 
   return (
