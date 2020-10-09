@@ -17,25 +17,38 @@
     align-items: center;
     width: 150%;
     align-self: center;
-    padding: 20%;
+   /* padding: 20%;*/
     margin: auto;
    
 }
 
 .content-name{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
     color: black;
     font-size: 14px;
-    padding-right: 120%;
+    margin: auto;
+    padding-right: 50%;
     
 }
 
-.password {
+.password  {
+    display: flex;
+    flex-direction: column;
     border-radius: 8px;
+    margin:auto;
+    margin-left: -20%   
+    
 }
 
 .username {
+    display: flex;
+    flex-direction: column;
     border-radius: 8px;
-}
+    margin:auto;
+     
+} 
 
 .formButton {
     display: flex;
@@ -49,3 +62,11 @@
     color: black;
     text-decoration-color: red;
     }
+.loginHeader {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    font-size: 18px;
+    padding-left: 50%;
+    
+}
