@@ -31,7 +31,7 @@ const BairedSteps = (props) => {
       /> : 
       <div>Dancers solo onto stage from opposite downstage wings, <br></br>
        one mover at a time with a 30 second space of time between entrances</div>}
-      <Link to='/DashboardPage' >
+      <Link to='/dashboard' >
           <button>Back to Dashboard</button>
         </Link>
 

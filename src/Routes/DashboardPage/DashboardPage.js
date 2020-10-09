@@ -24,7 +24,7 @@ return (
     </Link>
     </div>
     <div className="logout">
-    <Link to='/Logout' >
+    <Link to='/logout' >
         <button>Logout</button>
     </Link>
     </div>

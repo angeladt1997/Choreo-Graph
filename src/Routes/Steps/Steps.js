@@ -32,7 +32,7 @@ const Steps = (props) => {
       <div>One dance initiates snapping. <br></br>
        All other dancers slowly join in. <br></br> 
        Dancer who starts snaps gives a loud clap to stop it</div>}
-       <Link to='/DashboardPage' >
+       <Link to='/dashboard' >
           <button>Back to Dashboard</button>
         </Link>
 

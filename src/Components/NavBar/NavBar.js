@@ -10,7 +10,8 @@ const NavBar = (props) => {
       <Link to='/logout'>
         Logout
       </Link>
-      <Link to='/DashboardPage'>
+      {" | "}
+      <Link to='/dashboard'>
         Dashboard
       </Link>
     </div>

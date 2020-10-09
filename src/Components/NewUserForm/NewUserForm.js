@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import AuthApiService from '../../Services/auth-api-service';
 import './NewUserForm.css';
-import { Link } from 'react-router-dom';
 
 const NewUserForm = (props) => {
   const [error, setError] = useState(null);
@@ -12,6 +11,7 @@ const NewUserForm = (props) => {
     //there should be two input boxes on the form below so users double check 
     //password matches before creating account
     if(password.value !== passwordVerify.value){
+      // console.log('In not match');
       setError("Password do not match");
       return;
     }
@@ -25,7 +25,7 @@ const NewUserForm = (props) => {
         username.value = ""
         password.value = ""
         passwordVerify.value = ''
-        props.onSuccessfulSignup()
+        props.onSignupSuccess()
     })
     .catch(res => {
       setError(res.error);
@@ -48,14 +48,13 @@ const NewUserForm = (props) => {
           <label htmlFor="passwordVerify" ></label><br/>
           <span className="content-name">Confirm</span>
           <input className='passwordVerify' type='password' required id='passwordVerify'></input><br/>
-          <Link to='/DashboardPage'>
-            <button type="submit" value="Sign Up" className="formButtonTwo">Start Graphing</button>
-          </Link>
+            
+          <button type="submit" value="Sign Up" className="formButtonTwo">Start Graphing</button>
         </form>
       </div>
-        <div role='alert'>
-          {error ? <p className='red'>{error}</p> : null}
-        </div>
+      <div role='alert'>
+        {error ? <p className='red'>{error}</p> : null}
+      </div>
       
     </>
   )

@@ -2,10 +2,6 @@ import React, {useState} from 'react';
 import AuthApiService from '../../Services/auth-api-service';
 import './LoginForm.css';
 
-
-
-
-
 const LoginForm = (props) => {
   const [error, setError] = useState(null);
 
@@ -33,22 +29,22 @@ const LoginForm = (props) => {
   return (
   <div>
 
-  <form className="loginForm" onSubmit={(e)=> handleSubmitJwtAuth(e)}> 
-        <div className="name-section">
-            <label htmlFor="userName" className="label-name">
-              <span className="content-name">Username</span>
-              <input className='username'  type='text' required id='username' >                
-              </input>
-            </label><br/>          
-           <label htmlFor="password" className="label-name">
-             <span className="content-name">password</span>
-              <input className='password' type='password' required id='password'>
-              </input>
-           </label><br/>          
-        </div>
-        
-        <button type="submit" value="Sign Up" className="formButton">Start Graphing</button>
-       
+    <form className="loginForm" onSubmit={(e)=> handleSubmitJwtAuth(e)}> 
+      <div className="name-section">
+          <label htmlFor="userName" className="label-name">
+            <span className="content-name">Username</span>
+            <input className='username'  type='text' required id='username' >                
+            </input>
+          </label><br/>          
+          < label htmlFor="password" className="label-name">
+            <span className="content-name">password</span>
+            <input className='password' type='password' required id='password'>
+            </input>
+          </label><br/>          
+      </div>
+      
+      <button type="submit" value="Sign Up" className="formButton">Start Graphing</button>
+    
     </form>
   </div>
   )

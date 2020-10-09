@@ -51,10 +51,10 @@ const App = () => {
             component={() => <LoginPage onLogin={setIsLoggedIn}/>}
             componentProps={{onLogin: setIsLoggedIn}}
           />
-       
+      
           
           <PrivateRoute 
-            path={'/DashboardPage'}
+            path={'/dashboard'}
             component={DashboardPage}
           />
 
@@ -76,9 +76,9 @@ const App = () => {
             component={BairedSteps}
           />
           <PrivateRoute
-            path={'/Logout'}
+            path={'/logout'}
             component={() => <Logout
-              setIsLoggedIn={false}
+              setIsLoggedIn={setIsLoggedIn}
             />}
           />
           

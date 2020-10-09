@@ -6,7 +6,7 @@ import NewUserForm from '../../Components/NewUserForm/NewUserForm';
 //gives it its place in the app
 const NewUser = (props) => {
 
-  const handleSuccessfulSignup = user => {
+  const handleSignupSuccess = user => {
     const { history } = props
     history.push('/login')
   }
@@ -18,10 +18,12 @@ const NewUser = (props) => {
           Become a Grapher
         </h1>
       </div>
+
       <section className="signupBody">
         <NewUserForm 
-          onSuccessfulSignup={handleSuccessfulSignup}
+          onSignupSuccess={handleSignupSuccess}
         />
+
       </section>
     </div>
   );
