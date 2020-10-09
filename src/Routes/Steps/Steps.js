@@ -31,7 +31,7 @@ const Steps = (props) => {
       <Pieces
         targetPiece={targetPiece} 
         pieceId={id} 
-        changeStep={changeStep}
+        
       
       /> : 
       <div>One dance initiates snapping. <br></br>

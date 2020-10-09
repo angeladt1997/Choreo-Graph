@@ -32,7 +32,7 @@ const BairedSteps = (props) => {
       <Pieces
         targetPiece={targetPiece} 
         pieceId={id} 
-        changeStep={changeStep}
+       
       /> : 
       <div>Dancers solo onto stage from opposite downstage wings, <br></br>
        one mover at a time with a 30 second space of time between entrances</div>}
