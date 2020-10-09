@@ -26,17 +26,19 @@ const LandingPage = (props) => {
     and at-home studying. In order to get started, click on login. You can use this username and password 
     to access the website!</p> 
   
-    <p>
-    
+    <p className="loginFromLanding">
+    <b>
     Username: dunder 
     Password: password
         </p>
+        <div className="linksToLogin">
         <Link to='/NewUser' >
           <button>Create Account</button>
         </Link>
         <Link to='/Login' >
           <button>Login to Existing Account</button>
         </Link>
+        </div>
       </section>
     </div>
   );
