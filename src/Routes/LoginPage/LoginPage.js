@@ -1,5 +1,7 @@
 import React from 'react';
 import LoginForm from '../../Components/LoginForm/LoginForm';
+
+
 const LoginPage = (props) => {
   
   const handleSuccessfulLogin = () => {
@@ -17,6 +19,9 @@ const LoginPage = (props) => {
         <h1>
           Login to Choreo-Graph
         </h1>
+      </div>
+      <div className="rotatingGraph">
+       
       </div>
 
       <section className="loginBody">

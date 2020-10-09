@@ -38,7 +38,7 @@
     flex-direction: column;
     border-radius: 8px;
     margin:auto;
-    margin-left: -20%   
+    margin-left: -50%   
     
 }
 
@@ -47,26 +47,29 @@
     flex-direction: column;
     border-radius: 8px;
     margin:auto;
-     
+    margin-left: -50%  
 } 
 
 .formButton {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20%;
+    /* margin-top: 20%; */
     border: none;
     text-transform: uppercase;
     border-radius: 6px;
     cursor: pointer;
     color: black;
+    margin-right: 26%;
     text-decoration-color: red;
     }
 .loginHeader {
     margin: auto;
+    margin-left: 12%;
+    position: relative;
     text-align: center;
     display: flex;
     font-size: 18px;
-    padding-left: 50%;
+  
     
 }
