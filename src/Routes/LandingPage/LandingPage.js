@@ -27,7 +27,7 @@ const LandingPage = (props) => {
     to access the website!</p> 
   
     <p className="loginFromLanding">
-    <b>
+    <b/>
     Username: dunder 
     Password: password
         </p>
