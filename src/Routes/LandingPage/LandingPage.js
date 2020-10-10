@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './LandingPage.css';
+
 
 
 const LandingPage = (props) => {
@@ -20,11 +20,11 @@ const LandingPage = (props) => {
           //using a hash. I have not figured out how to get it to let me make
           //more human looking passwords.
         }
-        <p className="introText">
+        <p className="introText"> <b>
         Choreo-Graph is an interactive web app made for choreographers and other performing artists as 
     a tool to stage pieces for the purposes of teaching, ease of production communication,
     and at-home studying. In order to get started, click on login. You can use this username and password 
-    to access the website!</p> 
+    to access the website!</b></p> 
   
     <p className="loginFromLanding">
     <b/>
@@ -33,10 +33,12 @@ const LandingPage = (props) => {
         </p>
         <div className="linksToLogin">
         <Link to='/NewUser' >
-          <button>Create Account</button>
+          <button className="landingButtons"><b>Create Account</b></button>
         </Link>
+        <br></br>
+        <br></br>
         <Link to='/Login' >
-          <button>Login to Existing Account</button>
+          <button className="landingButtons"><b>Login to Existing Account</b></button>
         </Link>
         </div>
       </section>

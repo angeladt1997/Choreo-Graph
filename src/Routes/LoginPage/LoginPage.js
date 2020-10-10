@@ -20,10 +20,6 @@ const LoginPage = (props) => {
           Login to Choreo-Graph
         </h1>
       </div>
-      <div className="rotatingGraph">
-       
-      </div>
-
       <section className="loginBody">
         <LoginForm
           onSuccessfulLogin={handleSuccessfulLogin}

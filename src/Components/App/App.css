@@ -1,71 +1,50 @@
-/* .App_NavBar {
-  margin: auto;  
-  padding-left: 30%;
-}
+body {
+      background-image: linear-gradient(to left, lightblue, lightpink, lightblue)
+  }
 
-body{
-  background-color: lightgray;
-}
-.loginForm{
+.header {
+  font-size: 50px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 70px;
-  align-self: center;
-  padding: 0px;
-  margin: auto;
+  justify-content: space-between;
+
 }
-
-.content-name{
-  color: black;
-  font-size: 10px;
-  margin: auto;
-}
-
-
-.introText{
-  font-size: 20px;
+.landingHeader {
+  display: flex;
+  font-size:44px; 
   text-align: center;
-  margin-left: 30%;
+  margin: auto;
   margin-top: 10%;
+  position: relative;
+}
+
+.introText {
+  display: flex;
+  margin: auto;
+  text-align: center;
+  margin-top: 10%;
+  font-size: 20px;
+  color:black;
 }
 
 .loginFromLanding {
   display: flex;
-  margin-left: 35%;
-  font-size: 16px;
-  margin-top: 10%
+  margin-top: 10%;
+  
+  text-align: center;
+  font-size: 40px;
+  margin-left: 14%;
+  margin-right: 10%;
 }
 
 .linksToLogin {
   display: flex;
-  flex-direction: row;
-  margin-left: 37%;
+  flex-direction: column;
+  margin-left: 17%;
   margin-top: 10%;
 }
 
-.pieceOptions {
-  display: flex;
-  flex-direction: column;
-  margin: 4px;
-} */
-
-  .App_NavBar {
-  margin: 10%;
-  margin-bottom: 20%;
-  position: fixed;
-  top: 0;
-  right: 0;
-  padding-bottom: 20%;
-}
-
-.landingHeader{
-  margin: auto;
-  text-align: center;
-  display: flex;
-  font-size: 8px;
-  padding-left: 20%;
-  
+.landingButtons{
+  width: 20em;  
+  height: 2em;
+  font-size: 30px;
 }

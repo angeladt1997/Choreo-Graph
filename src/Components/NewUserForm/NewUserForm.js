@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import AuthApiService from '../../Services/auth-api-service';
-import './NewUserForm.css';
+
 
 const NewUserForm = (props) => {
   const [error, setError] = useState(null);
