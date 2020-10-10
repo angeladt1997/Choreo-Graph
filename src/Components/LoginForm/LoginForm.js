@@ -30,7 +30,7 @@ const LoginForm = (props) => {
   <div>
 
     <form className="loginForm" onSubmit={(e)=> handleSubmitJwtAuth(e)}> 
-      <div className="name-section">
+      <div className='username'>
           <label htmlFor="userName" className="label-name">
             
             <input className='username' placeholder="username"  type='text' required id='username' >                
