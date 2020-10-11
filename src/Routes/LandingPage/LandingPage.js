@@ -28,8 +28,7 @@ const LandingPage = (props) => {
   
     <p className="loginFromLanding">
     <b/>
-    Username: dunder 
-    Password: password
+    Create an account and Login!
         </p>
         <div className="linksToLogin">
         <Link to='/NewUser' >
