@@ -4,7 +4,7 @@ body {
   }
 
 .header {
-  font-size: large;
+  font-size: medium;
   display: flex;
   justify-content: flex-end;
   text-align: right;
@@ -25,17 +25,17 @@ body {
 
 .signupHeader {
   display: flex;
-  font-size: xx-large; 
+  font-size: medium; 
   text-align: center;
   margin: auto;
-  margin-top: 10%;
-  margin-left: 10%;
+  margin-top: 6%;
+  margin-left: 14%;
   position: relative;
 }
 
 .loginHeader {
   display: flex;
-  font-size: xx-large; 
+  font-size: medium; 
   text-align: left;
   margin: auto;
   margin-top: 10%;
@@ -46,14 +46,14 @@ body {
 
 .dashboardHeader {
   display: flex;
-  font-size:x-large; 
+  font-size:large; 
   text-align: center;
   margin: auto;
   margin-top: 10%;
   margin-left: 22%;
   margin-right: 20%;
   position: relative;
-  margin-bottom: 20%; 
+  margin-bottom: 10%; 
 
 }
 
@@ -101,7 +101,7 @@ body {
   text-align: center;
   margin-top: 10%;
   margin-left: 10;
-  font-size: xx-large;
+  font-size: x-large;
   color:black;
 }
 
@@ -117,7 +117,7 @@ body {
 
 .RegistrationForm {
   display: flex;
-  margin-top: 10%;
+  margin-top: 6%;
   text-align: center;
   font-size: larger;
   margin-left: 22%;
@@ -136,7 +136,7 @@ body {
 
 .username  {
   display: flex;
-  font-size: large;
+  font-size: medium;
   text-align: center;
   ;
 }
@@ -167,13 +167,13 @@ body {
 
 .password {
  display: flex;
- font-size: large; 
+ font-size: medium; 
  text-align: center;
 }
 
 .passwordVerify {
   display: flex;
-  font-size: large; 
+  font-size: medium; 
   text-align: center;
 }
 
@@ -195,8 +195,8 @@ body {
  
     /* width: 20em;   */
     height: 4em;
-    font-size: larger;
-    margin-top: 10%;
+    font-size: small;
+    margin-top: 1%;
     margin-left: 20%;
     margin-right: -26%;
 }
@@ -205,7 +205,7 @@ body {
 .formButtonThree{
   width: 20em;  
   height: 2em;
-  font-size: large;
+  font-size: small;
   margin-right: 10%;
   margin-left: 40%;
 }
@@ -213,21 +213,21 @@ body {
 .ViewPieces {
   width: 20em;  
   height: 4em;
-  font-size: large;
+  font-size: medium;
   margin: auto;
 }
 
 .logout {
   width: 20em;  
   height: 4em;
-  font-size: large;
+  font-size: medium;
   margin: auto;
 }
 
 .pieceOptions {
   width: 20em;  
   height: 4em;
-  font-size: large;
+  font-size: medium;
   margin: auto;
 }
 
