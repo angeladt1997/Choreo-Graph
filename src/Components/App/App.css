@@ -170,7 +170,7 @@ body {
   font-size: 30px;
   margin: auto;
 }
-@media screen and (min-width: 600px)  {
+/* @media screen and (min-width: 600px)  {
   .header {
     font-size: 25px;
     display: flex;
@@ -279,4 +279,4 @@ body {
     
   }
 
-}
+} */
