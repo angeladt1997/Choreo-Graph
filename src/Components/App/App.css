@@ -4,7 +4,7 @@ body {
   }
 
 .header {
-  font-size: xx-large;
+  font-size: large;
   display: flex;
   justify-content: flex-end;
   text-align: right;
@@ -16,10 +16,10 @@ body {
 
 .landingHeader {
   display: flex;
-  font-size: xx-large; 
+  font-size: large; 
   text-align: center;
   margin: auto;
-  margin-top: 10%;
+  margin-top: 6%;
   position: relative;
 }
 
@@ -87,7 +87,7 @@ body {
   margin: auto;
   text-align: center;
   margin-top: 10%;
-  font-size: x-large;
+  font-size: large;
   color:black;
 }
 
@@ -187,8 +187,8 @@ body {
 .landingButtons{
   width: 20em;  
   height: 2em;
-  font-size: 30px;
-  margin-right: 20%;
+  font-size: medium;
+  margin-right: 30%;
 }
 
 .formButtonTwo {
@@ -232,22 +232,23 @@ body {
 }
 
 
- @media screen and (max-width: 600px)  {
+ @media screen and (max-device-width: 600px)  {
   .header {
-    font-size: xx-large; 
+    font-size: 50px; 
   }
   .landingHeader {
     display: flex;
     font-size:larger; 
     text-align: center;
     margin: auto;
+    margin-left: 16%;
     margin-top: 10%;
     position: relative;
   }
   
   .signupHeader {
         display: flex;
-      font-size:larger; 
+      font-size:40px; 
       text-align: center;
       margin: auto;
       margin-top: 10%;
@@ -257,7 +258,7 @@ body {
   
   .loginHeader {
     display: flex;
-    font-size:larger; 
+    font-size:32px; 
     text-align: left;
     margin: auto;
     margin-top: 10%;
@@ -268,7 +269,7 @@ body {
   
   .dashboardHeader {
     display: flex;
-    font-size:x-large; 
+    font-size:40px; 
     text-align: center;
     margin: auto;
     margin-top: 10%;
@@ -281,7 +282,7 @@ body {
   
   .piecesHeader {
     display: flex;
-    font-size: xx-large; 
+    font-size: 70px; 
     text-align: center;
     margin: auto;
     margin-top: 20%;
@@ -294,7 +295,7 @@ body {
   
   .stepsHeader {
     display: flex;
-    font-size:xx-large; 
+    font-size:60px; 
     text-align: center;
     margin: auto;
     margin-top: 20%;
@@ -323,18 +324,18 @@ body {
     text-align: center;
     margin-top: 10%;
     margin-left: 10;
-    font-size: xx-large;
+    font-size: 40px;
     color:black;
   }
   
   .loginFromLanding {
     display: flex;
     margin-top: 10%;
-    
+    margin-right: 10%;
     text-align: center;
     font-size: larger;
-    margin-left: 24%;
-    margin-right: 10%;
+    margin-left: 30%;
+    margin-right: 30%;
   }
   
   .RegistrationForm {
@@ -358,19 +359,19 @@ body {
   
   .username  {
     display: flex;
-    font-size: large;
+    font-size: 40px;
     text-align: center;
     ;
   }
   
   .usernameLogin  {
-    font-size: larger;
+    font-size: 40px;
     text-align: center;
     
   }
   
   .passwordLogin  {
-    font-size: larger;
+    font-size: 40px;
     text-align: center;
     
   }
@@ -382,20 +383,20 @@ body {
   }
   
   .passwordFont {
-    font-size: larger;
+    font-size: 40px;
     text-align: center;
   }
   
   
   .password {
    display: flex;
-   font-size: large; 
+   font-size: 40px; 
    text-align: center;
   }
   
   .passwordVerify {
     display: flex;
-    font-size: large; 
+    font-size: 40px; 
     text-align: center;
   }
   
@@ -427,29 +428,29 @@ body {
   .formButtonThree{
     width: 20em;  
     height: 2em;
-    font-size: large;
-    margin-right: 10%;
+    font-size: 30px;
+    margin-right: 30%;
     margin-left: 40%;
   }
   
   .ViewPieces {
     width: 20em;  
     height: 4em;
-    font-size: large;
+    font-size: 30px;
     margin: auto;
   }
   
   .logout {
     width: 20em;  
     height: 4em;
-    font-size: large;
+    font-size: 30px;
     margin: auto;
   }
   
   .pieceOptions {
     width: 20em;  
     height: 4em;
-    font-size: large;
+    font-size: 40px;
     margin: auto;
   }
 
