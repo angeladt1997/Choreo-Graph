@@ -34,9 +34,21 @@ body {
   margin: auto;
   margin-top: 10%;
   margin-left: 10%;
+  margin-right: 20%;
   position: relative;
 }
 
+.dashboardHeader {
+  display: flex;
+  font-size:44px; 
+  text-align: center;
+  margin: auto;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 20%;
+  position: relative;
+
+}
 
 .introText {
   display: flex;
@@ -66,12 +78,46 @@ body {
   margin-right: 10%;
 }
 
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  text-align: center;
+  font-size: 40px;
+  margin-left: 22%;
+  margin-right: 40%;
+}
 
 .username  {
   display: flex;
   font-size: 40px;
   text-align: center;
+  ;
 }
+
+.usernameLogin  {
+  font-size: 80px;
+  text-align: center;
+  
+}
+
+.passwordLogin  {
+  font-size: 80px;
+  text-align: center;
+  
+}
+
+.usernameFont {
+  font-size: 40px;
+  text-align: center;
+  
+}
+
+.passwordFont {
+  font-size: 40px;
+  text-align: center;
+}
+
 
 .password {
  display: flex;
@@ -103,12 +149,27 @@ body {
  
     /* width: 20em;   */
     height: 4em;
-    font-size: 30px;
+    font-size: 50px;
     margin-top: 20%;
     margin-left: 20%;
     margin-right: 20%;
 }
 
+
+.formButtonThree{
+  width: 20em;  
+  height: 2em;
+  font-size: 30px;
+  margin-right: 20%;
+  margin-left: 40%;
+}
+
+.ViewPieces {
+  width: 20em;  
+  height: 2em;
+  font-size: 30px;
+  margin: auto;
+}
 @media screen and (min-width: 600px)  {
   .header {
     font-size: 25px;
@@ -136,6 +197,17 @@ body {
   margin-top: 10%;
   margin-left: 36%;
   position: relative;
+  }
+
+  .loginHeader {
+    display: flex;
+    font-size:22px; 
+    text-align: center;
+    margin: auto;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 20%;
+    position: relative;
   }
   
   .introText {

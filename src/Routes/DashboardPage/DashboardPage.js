@@ -10,7 +10,7 @@ return (
   //and images as well. Time projection of that portion of the project being 
   //done is minimum 6 months
   <div>
-    <div className="header">
+    <div className="dashboardHeader">
        <h1>Your Graphs</h1>
     </div>
     <div className="ViewPieces">
