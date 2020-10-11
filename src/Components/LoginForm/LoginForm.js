@@ -29,14 +29,14 @@ const LoginForm = (props) => {
   return (
   <>
   <div>
-    <form className="loginForm" onSubmit={(e)=> handleSubmitJwtAuth(e)}> 
+    <form className="loginForm" onSubmit={(e)=> handleSubmitJwtAuth(e)}>
       
           <label htmlFor="username" ></label><br/>
           <input className='usernameLogin'  placeholder="username" type='text'  required id='username'></input>
 
           <label htmlFor="password" ></label><br/>
           <input className='passwordLogin' placeholder="password" type='password' required id='password'></input>
-          <div className="formButtonTwo">           
+          <div className="formButtonThree">           
             <button type="submit" value="login" className="formButtonTwo">Start Graphing</button>
           </div>
         </form>

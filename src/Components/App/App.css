@@ -30,10 +30,10 @@ body {
 .loginHeader {
   display: flex;
   font-size:44px; 
-  text-align: center;
+  text-align: left;
   margin: auto;
   margin-top: 10%;
-  margin-left: 10%;
+  margin-left: 6%;
   margin-right: 20%;
   position: relative;
 }
@@ -44,10 +44,23 @@ body {
   text-align: center;
   margin: auto;
   margin-top: 10%;
-  margin-left: 10%;
+  margin-left: 22%;
   margin-right: 20%;
   position: relative;
+  margin-bottom: 40%; 
 
+}
+
+.piecesHeader {
+  display: flex;
+  font-size:100px; 
+  text-align: center;
+  margin: auto;
+  margin-top: 30%;
+  margin-left: 34%;
+  margin-right: 20%;
+  position: relative;
+  margin-bottom: 40%; 
 }
 
 .introText {
@@ -160,13 +173,27 @@ body {
   width: 20em;  
   height: 2em;
   font-size: 30px;
-  margin-right: 20%;
+  margin-right: 10%;
   margin-left: 40%;
 }
 
 .ViewPieces {
   width: 20em;  
-  height: 2em;
+  height: 4em;
+  font-size: 30px;
+  margin: auto;
+}
+
+.logout {
+  width: 20em;  
+  height: 4em;
+  font-size: 30px;
+  margin: auto;
+}
+
+.pieceOptions {
+  width: 20em;  
+  height: 4em;
   font-size: 30px;
   margin: auto;
 }

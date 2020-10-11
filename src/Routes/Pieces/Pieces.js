@@ -7,19 +7,23 @@ function Pieces(props) {
   return (
     <div className = "PiecePage">
     <div>
-      <h1>
+      <h1 className="piecesHeader">
         Pieces
       </h1>
     </div>
     <div className="pieceOptions">
       <Link to='/2112'>
-        <button> 2112</button>
+        <button className="pieceOptions"> 2112</button>
       </Link>
+      <br></br>
+      <br></br>
       <Link to='/MSLCRS'>
-        <button>MSLCRS</button>
+        <button className="pieceOptions">MSLCRS</button>
       </Link>
+      <br></br>
+      <br></br>
       <Link to='/Baired'>
-          <button>Baired</button>
+          <button className="pieceOptions">Baired</button>
       </Link>
     </div>
     <div className="newPiece">

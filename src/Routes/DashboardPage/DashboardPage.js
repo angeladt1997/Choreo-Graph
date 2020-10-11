@@ -20,12 +20,14 @@ return (
         //to do from their dashboards.
       }
     <Link to='/Pieces' >
-        <button>View Pieces</button>
+        <button className="ViewPieces">View Pieces</button>
     </Link>
     </div>
+    <br></br>
+    <br></br>
     <div className="logout">
     <Link to='/logout' >
-        <button>Logout</button>
+        <button className="logout">Logout</button>
     </Link>
     </div>
   </div>
