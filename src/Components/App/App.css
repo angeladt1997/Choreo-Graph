@@ -4,14 +4,19 @@ body {
   }
 
 .header {
-  font-size: 50px;
+  font-size: xx-large;
   display: flex;
-  justify-content: space-between;
-
+  justify-content: flex-end;
+  text-align: right;
 }
+
+.headerLink {
+  margin: 2%;
+}
+
 .landingHeader {
   display: flex;
-  font-size:44px; 
+  font-size: xx-large; 
   text-align: center;
   margin: auto;
   margin-top: 10%;
@@ -19,18 +24,18 @@ body {
 }
 
 .signupHeader {
-      display: flex;
-    font-size:44px; 
-    text-align: center;
-    margin: auto;
-    margin-top: 10%;
-    margin-left: 10%;
-    position: relative;
+  display: flex;
+  font-size: xx-large; 
+  text-align: center;
+  margin: auto;
+  margin-top: 10%;
+  margin-left: 10%;
+  position: relative;
 }
 
 .loginHeader {
   display: flex;
-  font-size:44px; 
+  font-size: xx-large; 
   text-align: left;
   margin: auto;
   margin-top: 10%;
@@ -81,7 +86,7 @@ body {
   margin: auto;
   text-align: center;
   margin-top: 10%;
-  font-size: 20px;
+  font-size: x-large;
   color:black;
 }
 
