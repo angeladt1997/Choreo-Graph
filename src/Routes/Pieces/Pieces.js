@@ -26,9 +26,7 @@ function Pieces(props) {
           <button className="pieceOptions">Baired</button>
       </Link>
     </div>
-    <div className="newPiece">
-      <button> Add a New Graph</button>
-    </div>
+    
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import Pieces from '../Pieces/Pieces';
+import StepsPage from './StepsPage';
 import PieceApiService from '../../Services/piece-api-service';
-import { Link } from 'react-router-dom';
+
 
 const Steps = (props) => {
   const [targetPiece, setTargetPiece] = useState(undefined)
@@ -19,22 +19,23 @@ const Steps = (props) => {
 
   return (
     <div>
-      <h1>
+      <h1 className="stepsHeader">
         2112 Steps 
       </h1>
       {targetPiece ? 
-      <Pieces
+      <StepsPage
         targetPiece={targetPiece} 
         pieceId={id} 
         
       
       /> : 
-      <div>One dance initiates snapping. <br></br>
+      <div className="firstText">One dancer initiates snapping. <br></br>
        All other dancers slowly join in. <br></br> 
        Dancer who starts snaps gives a loud clap to stop it</div>}
-       <Link to='/dashboard' >
-          <button>Back to Dashboard</button>
-        </Link>
+       <div className="piecesteps">One dancer initiates snapping. <br></br>
+       All other dancers slowly join in. <br></br> 
+       Dancer who starts snaps gives a loud clap to stop it</div>
+      
 
     </div>
   );

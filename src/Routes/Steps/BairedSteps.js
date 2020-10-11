@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import Pieces from '../Pieces/Pieces';
+import StepsPage from './StepsPage';
 import PieceApiService from '../../Services/piece-api-service';
-import { Link } from 'react-router-dom';
+
 
 const BairedSteps = (props) => {
   const [targetPiece, setTargetPiece] = useState(undefined)
@@ -20,20 +20,19 @@ const BairedSteps = (props) => {
 
   return (
     <div>
-      <h1>
+      <h1 className="stepsHeader">
         Baired Steps 
       </h1>
       {targetPiece ? 
-      <Pieces
+      <StepsPage
         targetPiece={targetPiece} 
         pieceId={id} 
        
       /> : 
-      <div>Dancers solo onto stage from opposite downstage wings, <br></br>
+      <div className="firstText">Dancers solo onto stage from opposite downstage wings, <br></br>
        one mover at a time with a 30 second space of time between entrances</div>}
-      <Link to='/dashboard' >
-          <button>Back to Dashboard</button>
-        </Link>
+       <div className="piecesteps">Dancers solo onto stage from opposite downstage wings, <br></br>
+       one mover at a time with a 30 second space of time between entrances</div>
 
     </div>
   );

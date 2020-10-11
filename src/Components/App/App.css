@@ -1,3 +1,4 @@
+
 body {
       background-image: linear-gradient(to left, lightblue, lightpink, lightblue)
   }
@@ -63,12 +64,37 @@ body {
   margin-bottom: 40%; 
 }
 
+.stepsHeader {
+  display: flex;
+  font-size:100px; 
+  text-align: center;
+  margin: auto;
+  margin-top: 30%;
+  margin-left: 24%;
+  margin-right: 20%;
+  position: relative;
+  margin-bottom: 40%;   
+}
+
 .introText {
   display: flex;
   margin: auto;
   text-align: center;
   margin-top: 10%;
   font-size: 20px;
+  color:black;
+}
+
+.firstText {
+  font-size: 0px;
+}
+
+.piecesteps {
+  display: flex;
+  margin: auto;
+  text-align: center;
+  margin-top: 10%;
+  font-size: 42px;
   color:black;
 }
 

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import Pieces from '../Pieces/Pieces';
+import StepsPage from './StepsPage';
 import PieceApiService from '../../Services/piece-api-service';
-import { Link } from 'react-router-dom';
 
 const MSLCRSSteps = (props) => {
   const [targetPiece, setTargetPiece] = useState(undefined)
@@ -19,20 +18,19 @@ const MSLCRSSteps = (props) => {
 
   return (
     <div>
-      <h1>
+      <h1 className="stepsHeader">
         MSLCRS 
       </h1>
       {targetPiece ? 
-      <Pieces
+      <StepsPage
         targetPiece={targetPiece} 
         pieceId={id} 
         
       /> : 
-      <div>Dancer (soloist) starts downstage in the chair facing upstage <br></br>
+      <div className="firstText">Dancer (soloist) starts downstage in the chair facing upstage <br></br>
       with a large mirror covering the back sham.</div>}
-      <Link to='/dashboard' >
-          <button>Back to Dashboard</button>
-        </Link>
+      <div className="piecesteps">Dancer (soloist) starts downstage in the chair facing upstage <br></br>
+      with a large mirror covering the back sham.</div>
 
     </div>
   );
