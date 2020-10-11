@@ -23,7 +23,7 @@ const LandingPage = (props) => {
         <p className="introText"> <b>
         Choreo-Graph is an interactive web app made for choreographers and other performing artists as 
     a tool to stage pieces for the purposes of teaching, ease of production communication,
-    and at-home studying. In order to get started, click on login. You can use this username and password 
+    and at-home studying. In order to get started, click on login. You can create a username and password 
     to access the website!</b></p> 
   
     <p className="loginFromLanding">
